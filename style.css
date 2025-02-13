@@ -1,0 +1,48 @@
+/* Global Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+    overflow: hidden;
+}
+
+/* Icon Container */
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    gap: 100px; /* Space them out more */
+}
+
+/* Base SVG Styles */
+svg {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    stroke: white;
+    transition: all 0.3s ease;
+}
+
+/* FLAME: Pre-Animation Glow */
+.flame {
+    filter: drop-shadow(0 0 10px orange);
+}
+
+/* WIND: Pre-Animation Setup */
+.wind {
+    filter: drop-shadow(0 0 10px cyan);
+}
+
+/* LIGHTNING: Pre-Flash Effect ⚡ */
+.lightning {
+    filter: drop-shadow(0 0 10px yellow);
+}
+
+/* RAINBOW: Pre-Glow Effect */
+.rainbow {
+    stroke: url(#rainbowGradient);
+    filter: drop-shadow(0 0 20px pink);
+}
