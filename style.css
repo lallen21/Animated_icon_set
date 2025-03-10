@@ -1,48 +1,48 @@
-/* Global Styles */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #111;
-    overflow: hidden;
-}
-
-/* Icon Container */
-.icon-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-    gap: 100px; /* Space them out more */
-}
-
-/* Base SVG Styles */
+body{
+     display:flex;
+     justify-content:center;
+     align-items: center;
+     height: 100vh;
+     background: lightslategray;
+  }
+.container{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
+      gap: 50px;
+      padding: 0 20px;
+      box-sizing: border-box;
+    
+  }
+  
 svg {
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-    stroke: white;
-    transition: all 0.3s ease;
-}
-
-/* FLAME: Pre-Animation Glow */
-.flame {
-    filter: drop-shadow(0 0 10px orange);
-}
-
-/* WIND: Pre-Animation Setup */
-.wind {
-    filter: drop-shadow(0 0 10px cyan);
-}
-
-/* LIGHTNING: Pre-Flash Effect ⚡ */
-.lightning {
-    filter: drop-shadow(0 0 10px yellow);
-}
-
-/* RAINBOW: Pre-Glow Effect */
-.rainbow {
-    stroke: url(#rainbowGradient);
-    filter: drop-shadow(0 0 20px pink);
-}
+     stroke: black;
+     stroke-width: 1px;
+     height: 200px;
+     width: 200px;
+  }
+  
+  
+  
+  
+.flame:hover {
+     fill: orange;
+     transform: scale(1.1);
+     transition: all 0.3s ease-in-out;
+     cursor: pointer;
+  }
+.wind:hover {
+     stroke: lightblue;
+     transform: translateX(-5px);
+     transition: all 0.3s ease-in-out;
+     cursor: pointer;
+  }
+.lightning:hover {
+     stroke: yellow;
+     filter: drop-shadow(0px 0px 10px yellow);
+     transition: all 0.3s ease-in-out;
+     cursor: pointer;
+  }
+  
